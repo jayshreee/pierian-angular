@@ -1,3 +1,4 @@
+import { SensorListener } from './interfaces';
 export class Car {
 
     // private nm: string
@@ -27,4 +28,16 @@ export let color: string = 'red'
 
 export function blink(): boolean {
     return true
+}
+
+export abstract class Os {
+    abstract algo(): void
+
+    proceed() {
+
+    }
+}
+
+export class IoTDevice implements SensorListener {
+    
 }
