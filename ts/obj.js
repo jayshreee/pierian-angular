@@ -8,9 +8,11 @@ obj.fn();
 console.log(`Val is ${obj['val']}`);
 function cb(dt) {
     console.log(`Speed is ${dt['speed']}`);
+    console.log(`Speed is ${dt}`);
+    dt['speed'] = 40;
 }
 function cbProper(cr) {
     console.log(`Name is ${cr.crWt}`);
 }
-cb(undefined);
+cb(() => console.log('hi'));
 // cbProper(null)
