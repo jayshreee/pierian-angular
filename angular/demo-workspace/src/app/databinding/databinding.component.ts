@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class DatabindingComponent {
 
+  // https://www.youtube.com/watch?v=ZfRn9VJzdGA
+  
   course = 'angular'
   topic = 'directives'
   typ = 'text'
