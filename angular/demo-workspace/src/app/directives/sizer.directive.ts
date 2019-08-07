@@ -3,19 +3,19 @@ import { Directive, HostBinding, HostListener, Input, OnInit } from '@angular/co
 @Directive({
   selector: '[appSizer]'
 })
-export class SizerDirective implements OnInit{
+export class SizerDirective implements OnInit {
 
   @Input('appSizer')
-  config : {}
+  config: DirConfig
 
   @HostBinding('style.width.px')
   width: number
 
   @HostBinding('style.background-color')
-  bkCl : string
+  bkCl: string
 
   @HostBinding('style.color')
-  fgCl : string
+  fgCl: string
 
   constructor() { }
 
@@ -35,3 +35,11 @@ export class SizerDirective implements OnInit{
     this.width = this.width - 50
   }
 }
+
+export class DirConfig {
+  fgCl: string
+  bkCl: string
+  wd: number
+}
+
+
