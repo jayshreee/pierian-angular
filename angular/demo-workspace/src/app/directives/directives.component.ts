@@ -21,14 +21,17 @@ export class DirectivesComponent implements OnInit {
     { os: 'windows', version: 10 }
   ]
 
-  osInfo = {
-    os: 'slgklkjslkgjslkg',
-    version: 899
-  }
+  osInfo: OsInfo
 
   constructor() { }
 
   ngOnInit() {
+    this.osInfo = this.getOsInfoFromServer()
+  }
+
+  getOsInfoFromServer() {
+    // http client code
+    return new OsInfo('kdahfkj', 89)
   }
 }
 
