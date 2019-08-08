@@ -18,10 +18,10 @@ export class CustomComponent implements OnInit {
   ngOnInit() {
   }
 
-  btnClick( dt : any) {
+  btnClick(dt: MouseEvent) {
 
     console.log(dt)
-    
+
     let ev: EvDt = {
       txt: this.alTxt
     }
