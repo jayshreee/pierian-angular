@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EvDt } from './custom/custom.component';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'demo-workspace';
+
+  customComponentClicked(e: EvDt) {
+    console.log(e)
+  }
 }
