@@ -1,3 +1,4 @@
+import { CustRegService } from './services/cust-reg.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -15,6 +16,9 @@ import { CardComponent } from './pricing/card-conatiner/card/card.component';
 import { FooterContainerComponent } from './pricing/footer-container/footer-container.component';
 import { FooterComponent } from './pricing/footer-container/footer/footer.component';
 import { CustomComponent } from './custom/custom.component';
+import { ServicesComponent } from './services/services.component';
+import { Comp1Component } from './services/comp1/comp1.component';
+import { Comp2Component } from './services/comp2/comp2.component';
 
 @NgModule({
   declarations: [
@@ -31,12 +35,15 @@ import { CustomComponent } from './custom/custom.component';
     CardComponent,
     FooterContainerComponent,
     FooterComponent,
-    CustomComponent
+    CustomComponent,
+    ServicesComponent,
+    Comp1Component,
+    Comp2Component
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [ CustRegService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
