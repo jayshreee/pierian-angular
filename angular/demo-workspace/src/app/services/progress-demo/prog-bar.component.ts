@@ -14,8 +14,6 @@ export class ProgBarComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.progressService.onProgressEvent(num => {
-      this.progress = num
-    })
+    this.progressService.onProgressEvent(prxncvmg => this.progress = prxncvmg)
   }
 }

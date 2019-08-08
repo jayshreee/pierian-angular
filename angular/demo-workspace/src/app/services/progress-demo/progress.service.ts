@@ -20,9 +20,8 @@ export class ProgressService {
     this.em.emit(this.progress)
   }
 
-  onProgressEvent() {
-    this.em.subscribe(function (pg: number) {
-      console.log(pg)
-    })
+  onProgressEvent(fn: (xzxvxb: number) => void) {
+    this.em.subscribe(fn)
   }
 }
+
