@@ -1,3 +1,4 @@
+import { CustRegService } from './../cust-reg.service';
 import { Injectable, EventEmitter } from '@angular/core';
 
 @Injectable({
@@ -9,7 +10,9 @@ export class ProgressService {
 
   private em: EventEmitter<number> = new EventEmitter()
 
-  constructor() { }
+  constructor(
+    private ser: CustRegService
+  ) { }
 
   makeProgress(isNv: boolean) {
     if (isNv) {
