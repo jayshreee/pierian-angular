@@ -1,3 +1,4 @@
+import { LoginModule } from './login/login.module';
 import { EventsModule } from './events/events.module';
 import { BlogModule } from './blog/blog.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -7,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ResourcesModule } from './resources/resources.module';
 import { NavModule } from './nav/nav.module';
+import { DashModule } from './dash/dash.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { NavModule } from './nav/nav.module';
     BlogModule,
     EventsModule,
     ResourcesModule,
-    NavModule
+    LoginModule,
+    DashModule
   ],
   providers: [],
   bootstrap: [AppComponent]
