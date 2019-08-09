@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-
+import { BlogPageComponent } from './blog-page/blog-page.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [BlogPageComponent],
   imports: [
     CommonModule
   ],
-  providers: []
+  providers: [],
+  exports: [BlogPageComponent]
 })
 export class BlogModule { }

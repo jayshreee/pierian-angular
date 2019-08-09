@@ -6,6 +6,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ResourcesModule } from './resources/resources.module';
+import { NavModule } from './nav/nav.module';
 
 @NgModule({
   declarations: [
@@ -15,9 +16,11 @@ import { ResourcesModule } from './resources/resources.module';
     BrowserModule,
     
     AppRoutingModule,
+    
     BlogModule,
     EventsModule,
-    ResourcesModule
+    ResourcesModule,
+    NavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
